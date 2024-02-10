@@ -1,0 +1,46 @@
+// Primary Color
+$green: hsl(75, 94%, 57%);
+
+// Neutral Colors
+$off-black: hsl(0, 0%, 8%);
+$dark-grey: hsl(0, 0%, 12%);
+$grey: hsl(0, 0%, 20%);
+$white: hsl(0, 0%, 100%);
+
+// Typography
+$primary-font: 'Inter', sans-serif;
+
+// Font Sises
+$lg-size: 2rem;
+$sm-size: 1.2rem;
+
+// Font Weights
+$normal: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// General Resets
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	display: grid;
+	place-content: center;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 50px 10px;
+	background-color: $off-black;
+}
+
+// Flexbox Factory
+@mixin flexbox($direction, $justify, $align, $gap) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+	gap: $gap;
+}
