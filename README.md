@@ -1,5 +1,5 @@
 # frontend-mentor-challenge
-Challenge:  of frontendMentor, completed.
+Challenge: Social links profile of frontendMentor, completed.
 
 ------------
 #### Technologies I used:
