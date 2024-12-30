@@ -1,0 +1,60 @@
+@use 'guide.sass'
+
+// main container
+.main-wrapper
+	width: 300px
+	height: 520px
+	padding: 20px
+	font-family: guide.$primary-font
+	background-color: guide.$dark-grey
+	border-radius: 10px
+
+// profile section
+.profile
+	@include guide.flexbox(column, center, center, 10px)
+
+.profile__picture
+	width: 80px
+	height: 80px
+	border-radius: 100%
+
+.profile__name
+	margin: 10px 0 0
+	font-size: guide.$lg-size
+	font-weight: guide.$semi-bold
+	color: guide.$white
+
+.profile__country
+	margin: 0
+	font-size: guide.$sm-size
+	font-weight: guide.$bold
+	color: guide.$green
+
+.profile__profession
+	font-size: guide.$sm-size
+	color: guide.$white
+
+// social media section
+.social-media
+	@include guide.flexbox(column, start, center, 20px)
+	margin-top: 10px
+
+.social-btn
+	padding: 10px
+	width: 100%
+	height: 35px
+	font-size: guide.$sm-size
+	font-weight: guide.$semi-bold
+	text-decoration: none
+	text-align: center
+	color: guide.$white
+	background-color: guide.$grey
+	border: none
+	border-radius: 5px
+	transition: background-color 0.4s ease-in
+	color: guide.$white
+
+	&:hover
+		color: guide.$dark-grey
+		background-color: guide.$green
+		cursor: pointer
