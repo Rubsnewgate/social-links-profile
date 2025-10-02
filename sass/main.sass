@@ -1,60 +1,62 @@
-@use 'guide.sass'
+@use 'resets.sass'
 
-// main container
-.main-wrapper
-	width: 300px
-	height: 520px
-	padding: 20px
-	font-family: guide.$primary-font
-	background-color: guide.$dark-grey
-	border-radius: 10px
+// Card container
+.card
+	width: min(20rem, 100%)
+	margin: 0 auto
+	padding: 1.25rem
+	font-family: resets.$primary-font
+	background-color: resets.$dark-grey
+	border-radius: 0.5rem
 
-// profile section
+// Profile info
 .profile
-	@include guide.flexbox(column, center, center, 10px)
+	@include resets.flexbox(column, center, center, 0.5rem)
 
 .profile__picture
-	width: 80px
-	height: 80px
+	width: 5rem
+	height: 5rem
 	border-radius: 100%
 
 .profile__name
-	margin: 10px 0 0
-	font-size: guide.$lg-size
-	font-weight: guide.$semi-bold
-	color: guide.$white
+	margin: 0.5rem 0 0
+	font-size: resets.$lg-size
+	font-weight: resets.$semi-bold
+	color: resets.$white
 
 .profile__country
-	margin: 0
-	font-size: guide.$sm-size
-	font-weight: guide.$bold
-	color: guide.$green
+	font-size: resets.$sm-size
+	font-weight: resets.$bold
+	color: resets.$green
 
 .profile__profession
-	font-size: guide.$sm-size
-	color: guide.$white
+	font-size: resets.$sm-size
+	color: resets.$white
 
-// social media section
+// Social media links
 .social-media
-	@include guide.flexbox(column, start, center, 20px)
-	margin-top: 10px
+	@include resets.flexbox(column, start, center, 1rem)
+	margin-block-start: 1rem
 
 .social-btn
-	padding: 10px
+	padding: 0.5rem
 	width: 100%
-	height: 35px
-	font-size: guide.$sm-size
-	font-weight: guide.$semi-bold
+	height: 2rem
+	font-size: resets.$sm-size
+	font-weight: resets.$semi-bold
 	text-decoration: none
 	text-align: center
-	color: guide.$white
-	background-color: guide.$grey
+	color: resets.$white
+	background-color: resets.$grey
 	border: none
-	border-radius: 5px
-	transition: background-color 0.4s ease-in
-	color: guide.$white
+	border-radius: 0.25rem
+	transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out
+	color: resets.$white
 
 	&:hover
-		color: guide.$dark-grey
-		background-color: guide.$green
 		cursor: pointer
+		color: resets.$dark-grey
+		background-color: resets.$green
+
+	@media (prefers-reduced-motion: reduce)
+		transition: none

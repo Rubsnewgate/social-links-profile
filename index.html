@@ -4,39 +4,33 @@
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="description" content="Frontend mentor challenge"/>
+	<meta name="description" content="Profile card component challenge"/>
 	<title> Profile Card </title>
 	<!-- font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
 	<!-- styles -->
-	<link rel="stylesheet" href="../styles/main.css"/>
+	<link rel="stylesheet" href="./styles/main.css"/>
 </head>
 <body>
-	<main class="main-wrapper">
+	<div class="card">
 		<section class="profile">
-				<img class="profile__picture"
-					src="../assets/img/avatar-jessica.jpeg"
-					alt="Profile picture"
-				/>
-				<h1 class="profile__name">
-					Jessica Randall
-				</h1>
-				<p class="profile__country">
-					London, United Kingdom
-				</p>
-				<p class="profile__profession">
-					"Front-end developer and avid reader."
-				</p>
+				<img class="profile__picture" src="./assets/img/jessica.jpeg"
+					alt="User profile picture"/>
+
+				<h3 class="profile__name"> Jessica Randall </h3>
+				<span class="profile__country"> London, United Kingdom </span>
+				<span class="profile__profession"> "Front-end developer and avid reader." </span>
 		</section>
 
-		<section class="social-media">
+		<div class="social-media">
 			<a class="social-btn github-btn" href="#"> GitHub </a>
 			<a class="social-btn frontend-btn" href="#"> Frontend Mentor </a>
 			<a class="social-btn linkedin-btn" href="#"> LinkedIn </a>
 			<a class="social-btn twitter-btn" href="#"> Twitter </a>
 			<a class="social-btn instagram-btn" href="#"> Instagram </a>
-		</section>
-	</main>
+		</div>
+	</div>
 </body>
 </html>
